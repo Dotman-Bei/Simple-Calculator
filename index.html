@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+    <input type="number" placeholder="Enter your first value" id="firstNumber">
+    <input type="number" placeholder="Enter your second value" id="secondNumber">
+
+    <button onclick="addition()">sum</button>
+    <button onclick="subtraction()">subtract</button>
+    <button onclick="product()">product</button>
+    <button onclick="division()">Divide</button>
+    <button onclick="modulus()">Module</button>
+    </div>
+
+    <div>
+
+    </div>
+
+    
+    <script>
+        function addition(){
+            console.log(firstNumber.value, secondNumber.value)
+            var firstValue = Number(firstNumber.value)
+            var secondValue = Number(secondNumber.value)
+            var sum = firstValue + secondValue
+            alert("The sum of "+firstValue+" and "+secondValue+" is "+sum);
+        }
+
+        function subtraction(){
+            console.log(firstNumber.value, secondNumber.value)
+            var firstValue = Number(firstNumber.value)
+            var secondValue = Number(secondNumber.value)
+            var sum = firstValue - secondValue
+            alert("The subtraction of "+firstValue+" and "+secondValue+" is "+sum);
+        }
+
+        function product(){
+            console.log(firstNumber.value, secondNumber.value)
+            var firstValue = Number(firstNumber.value)
+            var secondValue = Number(secondNumber.value)
+            var sum = firstValue * secondValue
+            alert("The product of "+firstValue+" and "+secondValue+" is "+sum);
+        }
+
+        function division(){
+            console.log(firstNumber.value, secondNumber.value)
+            var firstValue = Number(firstNumber.value)
+            var secondValue = Number(secondNumber.value)
+            var sum = firstValue / secondValue
+            alert("The division of "+firstValue+" and "+secondValue+" is "+sum);
+        }
+
+        function modulus(){
+            console.log(firstNumber.value, secondNumber.value)
+            var firstValue = Number(firstNumber.value)
+            var secondValue = Number(secondNumber.value)
+            var sum = firstValue % secondValue
+            alert("The modulus of "+firstValue+" and "+secondValue+" is "+sum);
+        }
+
+    </script>
+</body>
+</html>
